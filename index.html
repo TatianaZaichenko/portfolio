@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="hero.display">Создание осмысленных цифровых опытов.</title>
+  <meta name="description" data-i18n-content="hero.lede" content="Создание осмысленных цифровых опытов. UX/UI дизайнер Tetiana Zaichenko.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/mockup.css">
+  <link rel="stylesheet" href="css/fig-match.css?v=r2">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>T</text></svg>">
+</head>
+<body data-home>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-label">View</div>
+
+  <header class="nav">
+    <div class="nav__cluster">
+      <a class="nav__sign" href="index.html">Tetiana Z.</a>
+      <nav class="nav__links" data-i18n-aria="nav.aria" aria-label="Основная навигация">
+        <a href="index.html" data-hover data-i18n="nav.home">Home</a>
+        <a href="#work" data-nav="work" data-hover data-i18n="nav.product">Product</a>
+        <a href="#ops" data-nav="ops" data-hover data-i18n="nav.tech">Technologies</a>
+        <a href="#process" data-nav="process" data-hover data-i18n="nav.app">Application</a>
+        <a href="#contact" data-nav="contact" data-hover data-i18n="nav.contact">Contact</a>
+      </nav>
+    </div>
+    <div class="nav__right">
+      <div class="lang" data-lang>
+        <button class="lang__btn" type="button" data-lang-toggle data-hover data-i18n-aria="nav.lang" aria-label="Язык" aria-haspopup="listbox" aria-expanded="false">
+          <span data-lang-current>EN</span>
+          <img class="lang__chevron" src="images/icon-lang-chevron.svg" width="20" height="20" alt="">
+        </button>
+        <ul class="lang__menu" data-lang-menu hidden>
+          <li><button type="button" data-lang-set="en">English <small>EN</small></button></li>
+          <li><button type="button" data-lang-set="ru">Русский <small>RU</small></button></li>
+          <li><button type="button" data-lang-set="uk">Українська <small>UK</small></button></li>
+          <li><button type="button" data-lang-set="de">Deutsch <small>DE</small></button></li>
+          <li><button type="button" data-lang-set="fr">Français <small>FR</small></button></li>
+          <li><button type="button" data-lang-set="it">Italiano <small>IT</small></button></li>
+          <li><button type="button" data-lang-set="pl">Polski <small>PL</small></button></li>
+        </ul>
+      </div>
+      <button class="menu-btn" type="button" data-i18n-aria="nav.menu" aria-label="Открыть меню" data-menu>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="overlay-nav" data-overlay aria-hidden="true">
+    <a href="index.html"><span>01</span><span data-i18n="nav.home">Home</span></a>
+    <a href="#work" data-nav="work"><span>02</span><span data-i18n="nav.product">Product</span></a>
+    <a href="#ops" data-nav="ops"><span>03</span><span data-i18n="nav.tech">Technologies</span></a>
+    <a href="#process" data-nav="process"><span>04</span><span data-i18n="nav.app">Application</span></a>
+    <a href="#contact" data-nav="contact"><span>05</span><span data-i18n="nav.contact">Contact</span></a>
+    <div class="overlay-nav__meta">
+      <span>tanaaga168@gmail.com</span>
+      <span>+49 176 84214838</span>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero hero--studio">
+      <div class="wrap">
+      <div class="hero-stage">
+        <div class="hero-copy">
+          <p class="kicker reveal" data-i18n="hero.kicker">Дизайнер интерфейсов</p>
+          <h1 class="display reveal reveal-d1" data-i18n="hero.display">Создание осмысленных цифровых опытов.</h1>
+          <p class="hero-lede reveal reveal-d2" data-i18n="hero.lede">Я решаю сложные задачи продуктов с помощью тщательного исследования пользователей и минималистичных дизайнерских решений. Создание систем, которые соединяют людей и технологии.</p>
+          <div class="hero__cta reveal reveal-d3">
+            <a class="btn btn--fill" href="#work" data-nav="work" data-hover data-magnetic data-i18n="hero.ctaCases">Посмотреть избранное</a>
+            <a class="btn btn--ghost" href="#about" data-nav="about" data-hover data-magnetic data-i18n="hero.ctaStory">Прочитать мою историю</a>
+          </div>
+        </div>
+        <figure class="hero-shot reveal reveal-d4">
+          <img src="images/2.jpg" data-i18n-alt="hero.alt" alt="Презентация Beige — визуальный стиль работ">
+        </figure>
+      </div>
+      </div>
+    </section>
+
+    <section class="band band--white" id="about">
+      <div class="wrap">
+        <div class="band-head band-head--split">
+          <h2 class="display" data-i18n="about.display">Форма следует за ощущением, создана для масштаба.</h2>
+          <p class="lede" data-i18n="about.side">Соединяя строгие стратегические бизнес-цели с гибким, органическим интерактивным поведением человека.</p>
+        </div>
+        <div class="about-photo">
+          <figure class="portrait inview">
+            <img src="images/foto.png" alt="Tetiana Zaichenko">
+          </figure>
+          <div class="about-copy inview">
+            <h3 data-i18n="about.h3">Дизайн с чистой сдержанностью для повышения рабочих процессов.</h3>
+            <p data-i18n="about.p1">Создаю понятные и удобные цифровые интерфейсы, трансформируя сложные технические задачи в интуитивные UI/UX решения. Я считаю, что отличная система дизайна — это не только визуальная документация, а масштабируемая платформа, которая создает культурную динамику внутри команд.</p>
+            <p data-i18n="about.p2">Моя практика глубоко укоренена в строгом тестировании пользователей и чистой типографике. Убирая излишнюю структуру, мы делаем место для ясности и позволяем функциональной чистоте продукта проявиться.</p>
+            <p class="sign" data-i18n="about.quoteBy">Tetiana Zaichenko</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band--peach" id="services">
+      <div class="wrap">
+        <div class="band-head band-head--split">
+          <h2 class="display" data-i18n="svc.display">Услуги, ориентированные на жизненный цикл продукта.</h2>
+          <p class="lede" data-i18n="svc.side">Комплексные интерактивные возможности — от валидации стратегии до финальной документации архитектуры системы.</p>
+        </div>
+        <div class="svc-grid">
+          <article class="svc-card inview">
+            <h3 data-i18n="svc.1t">Исследование UX</h3>
+            <p data-i18n="svc.1p">Глубокие воркшопы по открытию потребностей пользователей, непрерывные интервью, карты юзабилити и комплексная проверка поведения.</p>
+          </article>
+          <article class="svc-card inview">
+            <h3 data-i18n="svc.2t">Дизайн интерфейса</h3>
+            <p data-i18n="svc.2p">Интерфейсы с точностью до пикселя, высокого качества и адаптивные, основанные на строгих формулах компоновки и высоко отполированных графических стандартах.</p>
+          </article>
+          <article class="svc-card inview">
+            <h3 data-i18n="svc.3t">Прототипирование</h3>
+            <p data-i18n="svc.3p">Интерактивные поведенческие модели, идеально отражающие динамические потоки состояний, кастомные переходы и микроинтеракции с реальным ощущением.</p>
+          </article>
+          <article class="svc-card inview">
+            <h3 data-i18n="svc.4t">Системы дизайна</h3>
+            <p data-i18n="svc.4p">Масштабируемая архитектура компонентов с токенизированными вариациями, тщательные протоколы передачи разработчикам и правила структурного управления.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band--white" id="work">
+      <div class="wrap">
+        <div class="band-head band-head--split">
+          <h2 class="display" data-i18n="work.display">Кейсы, построенные с точностью до пикселя.</h2>
+          <p class="lede" data-i18n="work.side">Коллекция сложных цифровых решений, ориентированных на строгие цели продукта, интерактивную логику и масштабные фреймворки.</p>
+        </div>
+        <div class="work-carousel" data-work-carousel>
+          <div class="work-stack" data-work-track>
+          <article class="work-card">
+            <a href="project.html" data-i18n-cursor="cursor.case" data-cursor="Кейс">
+              <div class="work-card__media">
+                <video autoplay muted loop playsinline poster="images/micbiomate/1.jpg">
+                  <source src="images/vidio1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="work-card__body">
+                <div class="work-card__meta">
+                  <span class="tag" data-i18n="tag.ux">UX-аудит</span>
+                  <span class="tag" data-i18n="tag.health">HealthTech</span>
+                  <span class="tag" data-i18n="tag.platform">Платформа</span>
+                  <span class="work-card__role" data-i18n="work.role26">2026 · Тим-лид дизайна</span>
+                </div>
+                <h3><span class="brand-mixed">MicBioMate</span></h3>
+                <p data-i18n="work.micP">Интеграция передовых биотехнологических решений в системы цифрового мониторинга. Оптимизация сбора биометрических данных пациентов для превентивной диагностики и персонализированной терапии.</p>
+              </div>
+            </a>
+          </article>
+          <article class="work-card">
+            <a href="project-mamajoy.html" data-i18n-cursor="cursor.case" data-cursor="Кейс">
+              <div class="work-card__media">
+                <video autoplay muted loop playsinline poster="images/mamajoy/1.png">
+                  <source src="images/vidio2.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="work-card__body">
+                <div class="work-card__meta">
+                  <span class="tag" data-i18n="tag.ux">UX-аудит</span>
+                  <span class="tag" data-i18n="tag.health">HealthTech</span>
+                  <span class="tag" data-i18n="tag.web">Веб-приложение</span>
+                  <span class="work-card__role" data-i18n="work.role25">2025 · Тим-лид дизайна</span>
+                </div>
+                <h3>MamaJoy</h3>
+                <p data-i18n="work.mjP">MamaJoy — это адаптивная Mobile-first экосистема и маркетплейс для беременных и молодых мам в Германии, созданная для снижения когнитивной нагрузки с помощью интуитивного UX, трекеров здоровья и быстрого заказа за 30 секунд. Проект опирается на детально проработанные сценарии пользователей.</p>
+              </div>
+            </a>
+          </article>
+          <article class="work-card">
+            <a href="project-koeln.html" data-i18n-cursor="cursor.case" data-cursor="Кейс">
+              <div class="work-card__media">
+                <video autoplay muted loop playsinline poster="images/koeln/1.jpg">
+                  <source src="images/vidio3.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="work-card__body">
+                <div class="work-card__meta">
+                  <span class="tag" data-i18n="tag.ux">UX-аудит</span>
+                  <span class="tag" data-i18n="tag.ed">EdTech / GovTech</span>
+                  <span class="tag" data-i18n="tag.web">Веб-приложение</span>
+                  <span class="work-card__role" data-i18n="work.role25">2025 · Тим-лид дизайна</span>
+                </div>
+                <h3>Klubfinder (Köln)</h3>
+                <p data-i18n="work.kfP">Единая цифровая экосистема для жителей Кёльна, упрощающая поиск, подбор и запись детей и взрослых в локальные секции, школы и кружки. Решение проблемы языкового барьера и фрагментации информации за счет мультиязычности, сквозного поиска и централизованного бронирования.</p>
+              </div>
+            </a>
+          </article>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band--peach" id="ops">
+      <div class="wrap">
+        <div class="band-head band-head--split">
+          <h2 class="display" data-i18n="ops.display">Современные Design Ops — все на карте.</h2>
+          <p class="lede" data-i18n="ops.side">Универсальный набор инструментов для реализации сложных мультиплатформенных продуктов — от качественного интервью до стандартного кода в производстве.</p>
+        </div>
+        <div class="ops-cols">
+          <div class="ops-col">
+            <h3 data-i18n="ops.c1">Основные дисциплины</h3>
+            <ul>
+              <li data-i18n="ops.l1">Дизайн интеракции</li>
+              <li data-i18n="ops.l2">UX-аудит поведения</li>
+              <li data-i18n="ops.l3">Масштабируемые системы дизайна</li>
+              <li data-i18n="ops.l4">Информационная архитектура</li>
+              <li data-i18n="ops.l5">Быстрое прототипирование в Framer</li>
+              <li data-i18n="ops.l6">Исследование пользователей и аудит</li>
+            </ul>
+          </div>
+          <div class="ops-col">
+            <h3 data-i18n="ops.c2">Инструменты и технологии</h3>
+            <ul>
+              <li>Figma Enterprise</li>
+              <li>React / Next.js</li>
+              <li>Framer Motion</li>
+              <li>Principle</li>
+              <li>Tailwind CSS</li>
+              <li>GitHub Ecosystem</li>
+            </ul>
+          </div>
+          <div class="ops-col">
+            <h3 data-i18n="ops.c3">Методологии</h3>
+            <ul>
+              <li data-i18n="ops.m1">Процесс «Двойной бриллиант»</li>
+              <li data-i18n="ops.m2">Непрерывное открытие</li>
+              <li data-i18n="ops.m3">Agile Design Ops</li>
+              <li data-i18n="ops.m4">Section 508 / WCAG</li>
+              <li data-i18n="ops.m5">Количественные аудиты A/B</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band--white" id="process">
+      <div class="wrap">
+        <div class="band-head band-head--split">
+          <h2 class="display" data-i18n="proc.display">Систематический процесс продукта.</h2>
+          <p class="lede" data-i18n="proc.side">Как я двигаюсь от неясных первоначальных проблем к готовым дизайнерским фреймворкам в производстве с абсолютной прозрачностью.</p>
+        </div>
+        <div class="process-row">
+          <article class="proc-step inview">
+            <span class="proc-step__n">01</span>
+            <h3 data-i18n="proc.1t">Открытие и определение объема</h3>
+            <p data-i18n="proc.1p">Картирование проблем продукта через глубокие интервью с пользователями и встречи по согласованию бизнес-метрик.</p>
+          </article>
+          <article class="proc-step inview">
+            <span class="proc-step__n">02</span>
+            <h3 data-i18n="proc.2t">Интерактивные фреймворки</h3>
+            <p data-i18n="proc.2p">Итерация поведенческих вайрфреймов для установления прочной механики навигации пользователя и правил системы.</p>
+          </article>
+          <article class="proc-step inview">
+            <span class="proc-step__n">03</span>
+            <h3 data-i18n="proc.3t">Отполированные визуалы</h3>
+            <p data-i18n="proc.3p">Доставка отполированных визуальных дизайнов с микро-контентом, поддержанных масштабируемыми архитектурами токенов класса enterprise.</p>
+          </article>
+          <article class="proc-step inview">
+            <span class="proc-step__n">04</span>
+            <h3 data-i18n="proc.4t">Передача и управление</h3>
+            <p data-i18n="proc.4p">Сопоставление команд разработки с надежными спецификациями для разработчиков и непрерывными проверками поведенческого аудита.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band--white" id="quotes">
+      <div class="wrap">
+        <div class="band-head band-head--split">
+          <h2 class="display"><span data-i18n="quotes.display">Что клиенты говорят об </span><span class="sign-inline">Tetiana&nbsp;Z.</span></h2>
+          <p class="lede" data-i18n="quotes.side">Тесное сотрудничество со скалирующими компаниями и корпоративными операциями для достижения проверяемого прогресса продукта.</p>
+        </div>
+        <blockquote class="quote-panel quote-panel--single inview">
+          <div class="quote-mark" aria-hidden="true"><img src="images/icon-quote.svg" width="32" height="24" alt=""></div>
+          <p data-i18n="quotes.q">«Татьяна полностью трансформировала наш веб-интерфейс для сбора биометрических данных. Под ее руководством по UX/UI и front-end разработке стартап получил чистый, адаптивный код в VS Code и масштабируемую Figma-систему с ИИ-инструментами, что позволило нашей команде ускорить сдачу спринтов и безупречно внедрить Agile-процессы. Абсолютно системный мыслитель и проактивный специалист».</p>
+          <div class="quote-author">
+            <img class="quote-ava" src="images/giovanni-barone.png" width="48" height="48" alt="Ph.D. Giovanni Davide Barone">
+            <cite>
+              <b>Ph.D. Giovanni Davide Barone</b>
+              <span data-i18n="quotes.role">Chief Executive Officer · Industrial Biotechnologist Entrepreneur</span>
+            </cite>
+          </div>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="cta-split" id="contact">
+      <div class="cta-split__copy">
+        <p class="cta-kicker" data-i18n="cta.kicker">Давайте работать вместе</p>
+        <div class="cta-split__head">
+          <h2 data-i18n-html="cta.display">У вас есть амбициозный<br>проект?</h2>
+          <p class="cta-lede" data-i18n="cta.lede">Сейчас я принимаю новые проекты по системам и визуальному дизайну. Если вы строите сложные инструменты для разработчиков, платформы здравоохранения или финтех-сети, давайте подготовим системный ответ.</p>
+        </div>
+        <div class="cta-contacts">
+          <a href="mailto:tanaaga168@gmail.com" data-hover><img src="images/icon-mail.svg" width="20" height="20" alt="">tanaaga168@gmail.com</a>
+          <a href="tel:+4917684214838" data-hover><img src="images/icon-phone.svg" width="20" height="20" alt="">+49 17684214838</a>
+        </div>
+      </div>
+      <figure class="cta-split__photo">
+        <img src="images/1.png" data-i18n-alt="cta.alt" alt="Архитектурная арка">
+      </figure>
+    </section>
+  </main>
+
+  <footer class="footer footer--studio">
+    <div class="wrap">
+      <div class="footer-divider"></div>
+      <div class="footer__row">
+        <div class="footer-brand">
+          <a class="footer-sign" href="index.html">Tetiana Z.</a>
+          <p class="footer-copy" data-i18n="foot.copy">© 2025 Tetiana Zaichenko. Все права защищены.</p>
+        </div>
+        <a class="footer-li" href="https://www.linkedin.com/" data-hover>LinkedIn <img src="images/icon-arrow-up-right.svg" width="10" height="10" alt=""></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/site-copy.js"></script>
+  <script src="js/case-copy.js"></script>
+  <script src="js/case-l10n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

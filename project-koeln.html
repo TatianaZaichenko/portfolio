@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klubfinder — кейс · Aрло.</title>
+  <meta name="description" content="Klubfinder — цифровая экосистема для академического сообщества Кёльна. UX/UI кейс Tetiana Zaichenko.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/mockup.css">
+  <link rel="stylesheet" href="css/mamajoy-page.css?v=r2">
+  <link rel="stylesheet" href="css/fig-match.css?v=r2">
+</head>
+<body class="mj-page mj-page--koeln">
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-label">View</div>
+
+  <header class="nav">
+    <div class="nav__cluster">
+      <a class="nav__sign" href="index.html">Tetiana Z.</a>
+      <nav class="nav__links" data-i18n-aria="nav.aria" aria-label="Основная навигация">
+        <a href="index.html" data-hover data-i18n="nav.home">Home</a>
+        <a href="index.html#work" data-nav="work" data-hover data-i18n="nav.product">Product</a>
+        <a href="index.html#ops" data-nav="ops" data-hover data-i18n="nav.tech">Technologies</a>
+        <a href="index.html#process" data-nav="process" data-hover data-i18n="nav.app">Application</a>
+        <a href="index.html#contact" data-nav="contact" data-hover data-i18n="nav.contact">Contact</a>
+      </nav>
+    </div>
+    <div class="nav__right">
+      <div class="lang" data-lang>
+        <button class="lang__btn" type="button" data-lang-toggle data-hover aria-label="Язык" aria-haspopup="listbox" aria-expanded="false">
+          <span data-lang-current>EN</span>
+          <img class="lang__chevron" src="images/icon-lang-chevron.svg" width="20" height="20" alt="">
+        </button>
+        <ul class="lang__menu" data-lang-menu hidden>
+          <li><button type="button" data-lang-set="en">English <small>EN</small></button></li>
+          <li><button type="button" data-lang-set="ru">Русский <small>RU</small></button></li>
+          <li><button type="button" data-lang-set="uk">Українська <small>UK</small></button></li>
+          <li><button type="button" data-lang-set="de">Deutsch <small>DE</small></button></li>
+          <li><button type="button" data-lang-set="fr">Français <small>FR</small></button></li>
+          <li><button type="button" data-lang-set="it">Italiano <small>IT</small></button></li>
+          <li><button type="button" data-lang-set="pl">Polski <small>PL</small></button></li>
+        </ul>
+      </div>
+      <button class="menu-btn" type="button" aria-label="Открыть меню" data-menu>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="overlay-nav" data-overlay aria-hidden="true">
+    <a href="index.html"><span>01</span><span data-i18n="nav.home">Home</span></a>
+    <a href="index.html#work" data-nav="work"><span>02</span><span data-i18n="nav.product">Product</span></a>
+    <a href="index.html#ops" data-nav="ops"><span>03</span><span data-i18n="nav.tech">Technologies</span></a>
+    <a href="index.html#process" data-nav="process"><span>04</span><span data-i18n="nav.app">Application</span></a>
+    <a href="index.html#contact" data-nav="contact"><span>05</span><span data-i18n="nav.contact">Contact</span></a>
+  </nav>
+
+  <main>
+    <section class="mj-hero">
+      <div class="wrap">
+        <div class="mj-topnav">
+          <a href="index.html" data-hover data-i18n="nav.homeBack">← На главную</a>
+          <span>
+            <a href="project.html" data-hover data-i18n="nav.prevCase">Предыдущий кейс</a>
+            &nbsp;·&nbsp;
+            <a href="project-mamajoy.html" data-hover data-i18n="nav.nextCase">Следующий кейс</a>
+          </span>
+        </div>
+        <p class="mj-badge" data-i18n="case.badge">UX/UI Case Study</p>
+        <h1 class="reveal" data-i18n="kf.h">Klubfinder — цифровая экосистема для академического сообщества</h1>
+        <p class="lede reveal reveal-d1" data-i18n="kf.lede">Разработка современного веб-ресурса для школы и клубов Кёльна. Понятная информационная архитектура для абитуриентов, учащихся и преподавателей, с акцентом на традициях и цифровом удобстве.</p>
+        <div class="mj-meta inview">
+          <div><span data-i18n="case.role">Роль</span><strong data-i18n="case.roleVal">Lead UX/UI Designer</strong></div>
+          <div><span data-i18n="case.time">Сроки</span><strong data-i18n="kf.timeVal">1 месяц (2025)</strong></div>
+          <div><span data-i18n="case.tools">Инструменты</span><strong data-i18n="mj.toolsVal">Figma, FigJam / Miro, VS Code</strong></div>
+          <div><span data-i18n="case.plat">Платформа</span><strong data-i18n="kf.platVal">Web / Desktop &amp; Mobile</strong></div>
+        </div>
+        <figure class="mj-hero-shot">
+          <img src="images/koeln/1.jpg" alt="Klubfinder — интерфейс поиска клубов">
+        </figure>
+      </div>
+    </section>
+
+    <section class="mj-section wrap">
+      <h2 data-i18n="case.about">О проекте</h2>
+      <p data-i18n="kf.b.about1">Родители сталкиваются с языковым барьером и разрозненной информацией при поиске секций, курсов и школьных программ.</p>
+      <p data-i18n="kf.b.about2">Klubfinder — единый сервис для школ и клубов Кёльна.</p>
+      <p data-i18n="kf.b.about3">Новые школы и студии регистрируют организацию и сами ведут карточки курсов.</p>
+    </section>
+
+    <section class="mj-section mj-pain-block">
+      <div class="wrap">
+      <h2 data-i18n="case.pain">Проблема и боли пользователей</h2>
+      <p data-i18n="kf.b.painLead">В процессе анализа рынка образовательных и досуговых сервисов Кёльна, а также глубинных интервью с родителями и представителями локальных клубов, мы выявили ключевые барьеры, усложняющие поиск секций и запись на занятия:</p>
+      <div class="mj-3">
+        <article class="mj-card inview">
+          <h3 data-i18n="kf.b.pain1t">Фрагментированность данных и сложный поиск</h3>
+          <p data-i18n="kf.b.pain1p">Пользователям приходится тратить много времени и делать избыточное количество действий, чтобы просто найти подходящую секцию (например, «гимнастика для детей от 3 лет» или «рисование для взрослых»). Информация рассеяна по десяткам разрозненных сайтов и соцсетей, а отсутствие единого каталога с актуальными статусами наличия мест делает процесс поиска долгим и хаотичным.</p>
+        </article>
+        <article class="mj-card inview">
+          <h3 data-i18n="kf.b.pain2t">Языковой барьер и отсутствие прозрачности</h3>
+          <p data-i18n="kf.b.pain2p">Существующие сайты предлагали сложную навигацию только на одном языке, не учитывая потребности мультиязычного сообщества Кёльна. Иностранным родителям трудно разобраться в условиях приема и расписании, а отсутствие прямого канала связи с клубами и возможности добавить новое заведение на карту создавало барьер как для посетителей, так и для организаторов.</p>
+        </article>
+        <article class="mj-card inview">
+          <h3 data-i18n="kf.b.pain3t">Устаревший интерфейс и визуальный шум</h3>
+          <p data-i18n="kf.b.pain3p">Перегруженные текстовые страницы, отсутствие наглядной структуры, устаревшие таблицы расписаний и неадаптивный дизайн вызывают у пользователей растерянность. Интерфейсы большинства локальных ресурсов не воспринимались как удобный современный сервис, вызывая сложности при попытке быстро оценить программы, возрастные категории и локацию на карте.</p>
+        </article>
+      </div>
+      </div>
+    </section>
+
+    <section class="mj-section wrap">
+      <h2 data-i18n="case.research">Глубинное исследование</h2>
+      <p data-i18n="kf.b.resP">Для валидации гипотез и точного понимания потребностей семей, экспатов и организаторов клубов в Кёльне мы провели комплексное исследование, сочетающее качественные и количественные методы.</p>
+      <div class="mj-3 mj-research-cards">
+        <article class="mj-card mj-stat inview">
+          <strong>22</strong>
+          <h3 data-i18n="case.statInt">Глубинных интервью</h3>
+          <p data-i18n="kf.b.s1p">Позволили выявить скрытые мотивы, языковые барьеры и реальные сложности при выборе секций. Мы поняли, как хаос в информации и отсутствие прозрачных статусов мест влияют на принятие решений.</p>
+        </article>
+        <article class="mj-card mj-stat inview">
+          <strong>250+</strong>
+          <h3 data-i18n="case.statSurvey">Ответов на онлайн-опрос</h3>
+          <p data-i18n="kf.b.s2p">Помогли собрать статистику о критериях выбора занятий в Кёльне, популярных возрастных категориях, готовности использовать единую карту и мультиязычный сервис для записи.</p>
+        </article>
+        <article class="mj-card mj-stat inview">
+          <strong>5</strong>
+          <h3 data-i18n="case.statComp">Ключевых конкурента</h3>
+          <p data-i18n="kf.b.s3p">Подробно проанализированы с точки зрения пользовательского опыта (UX), структуры каталога, способов фильтрации и навигации для поиска рыночных ниш и конкурентных преимуществ.</p>
+        </article>
+      </div>
+      <div class="mj-wide inview">
+        <h3 data-i18n="case.compH">Анализ конкурентных решений</h3>
+        <p data-i18n="kf.b.compP">В ходе анализа конкурентов мы сосредоточились на изучении пользовательского пути (User Journey) на городских информационных порталах, сайтах отдельных школ и агрегаторах досуга в Германии.</p>
+      </div>
+    </section>
+
+    <section class="mj-section mj-personas-block">
+      <div class="wrap">
+      <h2 data-i18n="case.personas">Персонажи (User Personas)</h2>
+      <p data-i18n="kf.b.perP">На основе паттернов поведения мы вывели два ключевых архетипа пользователей.</p>
+      <div class="mj-personas">
+        <article class="mj-persona inview">
+          <div class="mj-persona__head">
+            <img src="images/koeln/2.png" alt="Елена">
+            <div>
+              <h3 data-i18n="kf.b.pe1n">Елена, 38 лет</h3>
+              <span data-i18n="kf.b.pe1r">Родитель 7-летнего ребенка</span>
+            </div>
+          </div>
+          <dl>
+            <div><dt data-i18n="case.st">Статус:</dt> <dd data-i18n="kf.b.pe1st">Елена, 38 лет, Кёльн. Родитель 7-летнего ребенка, недавно переехала. Хороший английский, базовый немецкий.</dd></div>
+            <div><dt data-i18n="case.go">Цели:</dt> <dd data-i18n="kf.b.pe1go">Потребность в фильтрации по возрасту, району и онлайн-записи.</dd></div>
+            <div><dt data-i18n="kf.b.lblPa">Боли:</dt> <dd data-i18n="kf.b.pe1pa">Языковой барьер при поиске и записи. Разрозненность информации о детских секциях (спорт, искусство).</dd></div>
+            <div><dt data-i18n="kf.b.lblBe">Поведение:</dt> <dd data-i18n="kf.b.pe1be">Ищет целенаправленно (футбол/карате), использует фильтры, ценит мультиязычность и актуальность данных.</dd></div>
+          </dl>
+        </article>
+        <article class="mj-persona inview">
+          <div class="mj-persona__head">
+            <img src="images/koeln/3.png" alt="Мартин">
+            <div>
+              <h3 data-i18n="kf.b.pe2n">Мартин, 29 лет</h3>
+              <span data-i18n="kf.b.pe2r">IT-консультант</span>
+            </div>
+          </div>
+          <dl>
+            <div><dt data-i18n="case.st">Статус:</dt> <dd data-i18n="kf.b.pe2st">Мартин, 29 лет, живет в центральном районе, работает IT-консультантом. Высокий уровень дохода, свободный график, отличное владение немецким.</dd></div>
+            <div><dt data-i18n="case.go">Цели:</dt> <dd data-i18n="kf.b.pe2go">Найти вечерний клуб йоги (Vinyasa Yoga) рядом с работой/домом и курсы испанского языка для путешествия.</dd></div>
+            <div><dt data-i18n="kf.b.lblPa">Боли:</dt> <dd data-i18n="kf.b.pe2pa">В городе много студий йоги, но сложно сравнить стиль, время занятий и цену абонементов (месячный или поурочный).</dd></div>
+            <div><dt data-i18n="kf.b.lblBe">Поведение:</dt> <dd data-i18n="kf.b.pe2be">Использует мобильное приложение/сайт в обеденный перерыв. Ищет по типу активности (Йога + Vinyasa), времени дня (Вечер) и цене. Принимает решение быстро на основе хороших фотографий и понятной системы бронирования.</dd></div>
+          </dl>
+        </article>
+      </div>
+      </div>
+    </section>
+
+    <section class="mj-section wrap">
+      <h2 data-i18n="case.flow">Путь пользователя (User Flow)</h2>
+      <p data-i18n="kf.b.flowP">Минимум шагов от входа до записи на курс или регистрации школы.</p>
+      <div class="mj-flow">
+        <div class="mj-flow__step"><b>01</b><span data-i18n="kf.b.f1">Язык и поисковый запрос</span></div>
+        <div class="mj-flow__step"><b>02</b><span data-i18n="kf.b.f2">Фильтры возраста и мест</span></div>
+        <div class="mj-flow__step"><b>03</b><span data-i18n="kf.b.f3">Карта и карточки клубов</span></div>
+        <div class="mj-flow__step"><b>04</b><span data-i18n="kf.b.f4">Расписание и условия</span></div>
+        <div class="mj-flow__step"><b>05</b><span data-i18n="kf.b.f5">Заявка или бронирование</span></div>
+        <div class="mj-flow__step"><b>06</b><span data-i18n="kf.b.f6">Онбординг новой школы</span></div>
+      </div>
+    </section>
+
+    <section class="mj-section mj-lofi-block">
+      <div class="wrap">
+        <h2 data-i18n="case.lofi">Лоу-фай прототипы и итерации</h2>
+        <p data-i18n="kf.b.lofiP">Для проверки гипотез мы спроектировали и протестировали три итерации структуры главной страницы. Тестирование проводилось на жителях Кёльна и представителях локальных клубов с помощью тестов кликов (Click Tests) в Figma и юзабилити-тестов (Usability Tests) в Maze.</p>
+        <div class="mj-iters">
+          <article class="mj-iter inview">
+            <img src="images/koeln/4.jpg" alt="Итерация 1: плиточная структура">
+            <div>
+              <h3 data-i18n="kf.b.it1t">Итерация 1: Плиточная структура (Grid Layout)</h3>
+              <p data-i18n="kf.b.it1p">Слишком большое количество категорий и списков секций на первом экране рассеивало внимание. Пользователи путались в мелких элементах и с трудом находили нужную возрастную категорию или район на карте.</p>
+            </div>
+          </article>
+          <article class="mj-iter inview">
+            <img src="images/koeln/6.jpg" alt="Итерация 2: сложные фильтры">
+            <div>
+              <h3 data-i18n="kf.b.it2t">Итерация 2: Сложные фильтры (Complex Filters)</h3>
+              <p data-i18n="kf.b.it2p">Улучшение, но… Вынос множества выпадающих списков и параметров в шапку сайта перегрузил интерфейс. Пользователи тратили слишком много времени на настройку параметров, теряя фокус на главном действии — быстром подборе.</p>
+            </div>
+          </article>
+          <article class="mj-iter inview">
+            <img src="images/koeln/5.jpg" alt="Итерация 3: поиск и быстрые категории">
+            <div>
+              <h3 data-i18n="kf.b.it3t">Итерация 3: Финальный фокус (Search & Fast Categories)</h3>
+              <p data-i18n="kf.b.it3p">Успех: На главный экран вынесли крупную поисковую строку с географией, интерактивную карту и четкое разделение по 3 ключевым возрастным группам (0–16, 17–59, 60+). Это решение стало наиболее понятным и кликабельным.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="mj-section mj-id-block">
+      <div class="wrap">
+        <h2 data-i18n="case.id">Айдентика и визуальный язык</h2>
+        <p data-i18n="kf.b.idP">Спокойная природная палитра и чистые формы подчеркивают ощущение гармонии и ясности.</p>
+        <div class="mj-id">
+          <div>
+            <h3 data-i18n="case.colors">Цветовые решения</h3>
+            <div class="mj-swatch"><i class="kf-swatch--white"></i><span data-i18n="kf.b.col1">Белый</span></div>
+            <div class="mj-swatch"><i class="kf-swatch--gray"></i><span data-i18n="kf.b.col2">Светло-Серый</span></div>
+            <div class="mj-swatch"><i class="kf-swatch--amber"></i><span data-i18n="kf.b.col3">Яркий янтарно-жёлтый</span></div>
+            <div class="mj-swatch"><i class="kf-swatch--teal"></i><span data-i18n="kf.b.col4">Голубовато-бирюзовый оттенок</span></div>
+          </div>
+          <div>
+            <h3 data-i18n="case.comps">Компоненты интерфейса</h3>
+            <div class="kf-ui-bits">
+              <div class="kf-ui-icons" aria-hidden="true">
+                <div class="kf-icon-box">
+                  <span class="kf-burger"><em></em><em></em><em></em></span>
+                </div>
+                <div class="kf-icon-box">
+                  <span class="kf-chevs">
+                    <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M8.2 2.2 3.8 6l4.4 3.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M8.2 2.2 3.8 6l4.4 3.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                </div>
+              </div>
+              <div class="kf-ui-stack">
+                <span class="kf-btn kf-btn--std">Standard</span>
+                <span class="kf-btn kf-btn--hover">Schweben</span>
+                <span class="kf-btn kf-btn--focus">Fokus</span>
+                <span class="kf-btn kf-btn--press">Gepresst</span>
+                <span class="kf-btn kf-btn--off">Deaktiviert</span>
+                <span class="kf-btn kf-btn--amber">Standard</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mj-section mj-ui-block">
+      <div class="wrap">
+      <h2 data-i18n="case.ui">Финальный UI-дизайн</h2>
+      <p data-i18n="kf.b.uiP">Лаконичная эстетика и фокус на заботе о каждом пользователе с первого экрана. Спокойная цветовая палитра, интуитивный интерфейс и продуманная типографика снижают когнитивную нагрузку, превращая поиск занятий в легкий и приятный процесс для людей любого возраста.</p>
+      <div class="mj-ui">
+        <figure class="inview">
+          <div class="mj-ui-media">
+            <img src="images/koeln/7.jpg" alt="Главный экран поиска Klubfinder">
+          </div>
+          <h3 data-i18n="kf.b.ui1t">01. Главный экран поиска</h3>
+          <p data-i18n="kf.b.ui1p">Интуитивная точка входа с четким ценностным предложением. Моментальный доступ к умной строке поиска с возможностью фильтрации по городу, району, возрасту участника и цене прямо на главном экране. Это позволяет пользователю сразу приступить к поиску без лишних шагов.</p>
+        </figure>
+        <figure class="inview">
+          <div class="mj-ui-media">
+            <img src="images/koeln/8.jpg" alt="Каталог занятий Klubfinder">
+          </div>
+          <h3 data-i18n="kf.b.ui2t">02. Умный и удобный каталог</h3>
+          <p data-i18n="kf.b.ui2p">Структурированная подача информации с визуально понятными категориями. Вместо длинных списков — аккуратная плитка с фотографиями и четкими подписями (Спорт, Творчество, Языки). Использование «раскрывашек» (аккордеонов) позволяет скрывать детали, устраняя информационный шум и сохраняя фокус пользователя.</p>
+        </figure>
+        <figure class="inview">
+          <div class="mj-ui-media">
+            <img src="images/koeln/9.jpg" alt="Отправка заявки Klubfinder">
+          </div>
+          <h3 data-i18n="kf.b.ui3t">03. Мгновенная отправка заявки</h3>
+          <p data-i18n="kf.b.ui3p">Прозрачный и быстрый процесс подтверждения интереса всего в пару кликов. После отправки пользователь получает четкое сообщение об успешном результате («Ура! Все получилось!») и подробную информацию о следующих шагах: когда и как с ним свяжется тренер для согласования пробного занятия. Это снижает тревожность и повышает доверие.</p>
+        </figure>
+      </div>
+      </div>
+    </section>
+
+    <section class="mj-section wrap mj-ix">
+      <h2 data-i18n="kf.b.ixT">Интерактивное взаимодействие</h2>
+      <p class="mj-ix__lede" data-i18n="kf.b.ixP">Мы уделили особое внимание микроанимациям: гладкому скроллу категорий, отзывчивым карточкам секций и бесшовному переходу к оформлению заявки.</p>
+      <div class="mj-interact">
+        <div class="mj-interact__copy">
+          <h3 data-i18n="kf.b.ixH">Интуитивная навигация как ядро UX</h3>
+          <p data-i18n="kf.b.ixBody">Интерактивные элементы каталога мгновенно реагируют на касания: быстрый просмотр направлений, наглядный сброс фильтров и динамический выбор параметров позволяют пользователю легко найти нужный клуб и записаться в пару кликов даже на ходу.</p>
+          <p class="mj-ok" data-i18n="case.tested">✓ Подтверждено пользовательским тестированием</p>
+        </div>
+        <figure class="mj-interact__media">
+          <img src="images/koeln/1.jpg" alt="Интерфейс Klubfinder на ноутбуке и телефоне">
+        </figure>
+      </div>
+    </section>
+
+    <section class="mj-section mj-insights">
+      <div class="wrap">
+      <h2 data-i18n="case.insights">Ключевые инсайты</h2>
+      <div class="mj-3">
+        <article class="mj-card inview">
+          <h3 data-i18n="kf.b.in1t">Доверие повышает вовлеченность</h3>
+          <p data-i18n="kf.b.in1p">Прозрачные условия записи и понятная информация о секциях строят долгосрочное доверие родителей к платформе Klubfinder. Это повышает лояльность и конвертируется в более частые повторные бронирования.</p>
+        </article>
+        <article class="mj-card inview">
+          <h3 data-i18n="kf.b.in2t">Снижение когнитивной нагрузки</h3>
+          <p data-i18n="kf.b.in2p">Удобная система фильтров и наглядные категории избавляют пользователей от необходимости искать информацию на разрозненных сайтах, объединяя все секции города в единый понятный сервис.</p>
+        </article>
+        <article class="mj-card inview">
+          <h3 data-i18n="kf.b.in3t">Фокус на персонализации</h3>
+          <p data-i18n="kf.b.in3p">Быстрый подбор клубов по району, возрасту ребенка и стоимости позволяет пользователям находить релевантные варианты без лишних действий, существенно экономя их время.</p>
+        </article>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer footer--studio">
+    <div class="wrap">
+      <div class="footer-divider"></div>
+      <div class="footer__row">
+        <div class="footer-brand">
+          <a class="footer-sign" href="index.html">Tetiana Z.</a>
+          <p class="footer-copy" data-i18n="foot.copy">© 2025 Tetiana Zaichenko. Все права защищены.</p>
+        </div>
+        <a class="footer-li" href="https://www.linkedin.com/" data-hover>LinkedIn <img src="images/icon-arrow-up-right.svg" width="10" height="10" alt=""></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/site-copy.js"></script>
+  <script src="js/case-copy.js"></script>
+  <script src="js/case-l10n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

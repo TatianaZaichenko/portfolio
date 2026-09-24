@@ -1,0 +1,345 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MicBioMate — кейс · Aрло.</title>
+  <meta name="description" content="MicBioMate — платформа для биосинтеза интактного кератина. UX/UI кейс Tetiana Zaichenko.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/mockup.css">
+  <link rel="stylesheet" href="css/mamajoy-page.css?v=r2">
+  <link rel="stylesheet" href="css/fig-match.css?v=r2">
+</head>
+<body class="mj-page mj-page--mic">
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-label">View</div>
+
+  <header class="nav">
+    <div class="nav__cluster">
+      <a class="nav__sign" href="index.html">Tetiana Z.</a>
+      <nav class="nav__links" data-i18n-aria="nav.aria" aria-label="Основная навигация">
+        <a href="index.html" data-hover data-i18n="nav.home">Home</a>
+        <a href="index.html#work" data-nav="work" data-hover data-i18n="nav.product">Product</a>
+        <a href="index.html#ops" data-nav="ops" data-hover data-i18n="nav.tech">Technologies</a>
+        <a href="index.html#process" data-nav="process" data-hover data-i18n="nav.app">Application</a>
+        <a href="index.html#contact" data-nav="contact" data-hover data-i18n="nav.contact">Contact</a>
+      </nav>
+    </div>
+    <div class="nav__right">
+      <div class="lang" data-lang>
+        <button class="lang__btn" type="button" data-lang-toggle data-hover aria-label="Язык" aria-haspopup="listbox" aria-expanded="false">
+          <span data-lang-current>EN</span>
+          <img class="lang__chevron" src="images/icon-lang-chevron.svg" width="20" height="20" alt="">
+        </button>
+        <ul class="lang__menu" data-lang-menu hidden>
+          <li><button type="button" data-lang-set="en">English <small>EN</small></button></li>
+          <li><button type="button" data-lang-set="ru">Русский <small>RU</small></button></li>
+          <li><button type="button" data-lang-set="uk">Українська <small>UK</small></button></li>
+          <li><button type="button" data-lang-set="de">Deutsch <small>DE</small></button></li>
+          <li><button type="button" data-lang-set="fr">Français <small>FR</small></button></li>
+          <li><button type="button" data-lang-set="it">Italiano <small>IT</small></button></li>
+          <li><button type="button" data-lang-set="pl">Polski <small>PL</small></button></li>
+        </ul>
+      </div>
+      <button class="menu-btn" type="button" aria-label="Открыть меню" data-menu>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="overlay-nav" data-overlay aria-hidden="true">
+    <a href="index.html"><span>01</span><span data-i18n="nav.home">Home</span></a>
+    <a href="index.html#work" data-nav="work"><span>02</span><span data-i18n="nav.product">Product</span></a>
+    <a href="index.html#ops" data-nav="ops"><span>03</span><span data-i18n="nav.tech">Technologies</span></a>
+    <a href="index.html#process" data-nav="process"><span>04</span><span data-i18n="nav.app">Application</span></a>
+    <a href="index.html#contact" data-nav="contact"><span>05</span><span data-i18n="nav.contact">Contact</span></a>
+  </nav>
+
+  <main>
+    <section class="mj-hero">
+      <div class="wrap">
+        <div class="mj-topnav">
+          <a href="index.html" data-hover data-i18n="nav.homeBack">← На главную</a>
+          <span>
+            <a href="project-mamajoy.html" data-hover data-i18n="nav.prevCase">Предыдущий кейс</a>
+            &nbsp;·&nbsp;
+            <a href="project-koeln.html" data-hover data-i18n="nav.nextCase">Следующий кейс</a>
+          </span>
+        </div>
+        <p class="mj-badge" data-i18n="case.badge">UX/UI Case Study</p>
+        <h1 class="reveal" data-i18n="mic.h"><span class="brand-mixed">MicBioMate</span> — ПЛАТФОРМА ДЛЯ БИОСИНТЕЗА ИНТАКТНОГО КЕРАТИНА</h1>
+        <p class="lede reveal reveal-d1" data-i18n="mic.lede">Разработка корпоративного веб-ресурса для биотехнологического стартапа. Проектирование понятной информационной архитектуры, объединяющей научные данные, описание технологий и разделы для партнеров. Акцент на инновационности, безопасности и удобстве доступа к сложной биотехнологической информации.</p>
+        <div class="mj-meta inview">
+          <div><span data-i18n="case.role">Роль</span><strong data-i18n="case.roleVal">Lead UX/UI Designer</strong></div>
+          <div><span data-i18n="case.time">Сроки</span><strong data-i18n="mic.timeVal">1,5 месяца (2026)</strong></div>
+          <div><span data-i18n="case.tools">Инструменты</span><strong data-i18n="mic.toolsVal">Figma, FigJam / Miro, VS Code, Python</strong></div>
+          <div><span data-i18n="case.plat">Платформа</span><strong data-i18n="mic.platVal">Web / Desktop &amp; Mobile</strong></div>
+        </div>
+        <figure class="mj-hero-shot">
+          <img src="images/micbiomate/1.jpg" alt="MicBioMate — главный экран платформы">
+        </figure>
+      </div>
+    </section>
+
+    <section class="mj-section wrap">
+      <h2 data-i18n="mic.sec.about">О проекте</h2>
+      <p data-i18n="mic.b.about1">Лаборатории, исследовательские центры и производители космецевтики часто сталкиваются с фрагментированностью информации при поиске этичных, высокочистых биоматериалов и сложностью выстраивания B2B-партнерств. Поиск проверенных компонентов без животных ингредиентов (animal-free) требует длительного изучения разрозненных научных публикаций, долгих согласований и уточнения объемов производства.</p>
+      <p data-i18n="mic.b.about2">Был спроектирован веб-ресурс и B2B-платформа для стартапа MicBioMate — цифровое пространство, объединяющее научные данные о микробиологическом синтезе интактного кератина и удобный интерфейс взаимодействия. Проект решает проблему благодаря четкой структуризации технологий, наглядному представлению продуктов и бесшовному оформлению заявок на партнерство.</p>
+      <p data-i18n="mic.b.about3">Платформа работает в обе стороны: инновационные бренды и R&amp;D-лаборатории получают быструю консультацию и доступ к технологиям, а MicBioMate — эффективный канал для презентации разработок, привлечения заказчиков и расширения дистрибьюторской сети.</p>
+    </section>
+
+    <section class="mj-section mj-pain-block">
+      <div class="wrap">
+      <h2 data-i18n="mic.sec.pain">Проблема и боли пользователей</h2>
+      <p data-i18n="mic.b.painLead">В процессе анализа рынка B2B-биоматериалов и проведения интервью с представителями R&amp;D-лабораторий, космецевтических брендов и биотех-компаний мы выявили ключевые барьеры, усложняющие поиск и закупку биокомпонентов:</p>
+      <div class="mj-3">
+        <article class="mj-card inview">
+          <h3 data-i18n="mic.b.pain1t">Сложная навигация и нехватка специфических данных</h3>
+          <p data-i18n="mic.b.pain1p">B2B-клиентам приходится тратить много времени на поиск подробных спецификаций, сертификатов и данных об исследовании компонентов. Отсутствие структурированной информации о биосовместимости и технической документации прямо на сайте затягивает процесс принятия решения и требует долгих переписок.</p>
+        </article>
+        <article class="mj-card inview">
+          <h3 data-i18n="mic.b.pain2t">Отсутствие фокуса на этичности (Animal-Free)</h3>
+          <p data-i18n="mic.b.pain2p">Большинство существующих поставщиков предлагают традиционные белки животного происхождения, не выделяя 100% animal-free альтернативы. Покупателям трудно сразу оценить экологичность и биоэтичность производства, что критично для брендов, создающих чистую (clean beauty) и сугубо веганскую продукцию.</p>
+        </article>
+        <article class="mj-card inview">
+          <h3 data-i18n="mic.b.pain3t">Сложный путь к оформлению партнерства и запросу образцов</h3>
+          <p data-i18n="mic.b.pain3p">Запутанные формы обратной связи, отсутствие прозрачного описания этапов сотрудничества и отсутствие информации о минимальных партиях вызывают недоверие. Необходимость совершать избыточные действия, чтобы просто запросить тестовый образец (sample), становится основным барьером для R&amp;D-специалистов.</p>
+        </article>
+      </div>
+      </div>
+    </section>
+
+    <section class="mj-section wrap">
+      <h2 data-i18n="mic.sec.research">Глубинное исследование</h2>
+      <p data-i18n="mic.b.resP">Для валидации гипотез и понимания потребностей B2B-клиентов (R&amp;D-специалистов, технологов и закупщиков сырья) мы провели комплексное исследование, сочетающее качественные и количественные методы.</p>
+      <div class="mj-3 mj-research-cards">
+        <article class="mj-card mj-stat inview">
+          <strong data-i18n="mic.b.s1n">8</strong>
+          <h3 data-i18n="mic.b.s1t">Глубинных интервью</h3>
+          <p data-i18n="mic.b.s1p">Позволили выявить ключевые критерии выбора B2B-поставщиков, реальные барьеры при заказе образцов и требования к документации (сертификаты, протоколы). Мы поняли, как критична прозрачность состава и научных данных.</p>
+        </article>
+        <article class="mj-card mj-stat inview">
+          <strong data-i18n="mic.b.s2n">90+</strong>
+          <h3 data-i18n="mic.b.s2t">Ответов на онлайн-опрос</h3>
+          <p data-i18n="mic.b.s2p">Помогли собрать статистику о приоритетах R&amp;D-отделов, частоте закупок, отношении к 100% animal-free компонентам и о том, какая информация на сайте наиболее критична для первичного контакта.</p>
+        </article>
+        <article class="mj-card mj-stat inview">
+          <strong data-i18n="mic.b.s3n">3</strong>
+          <h3 data-i18n="mic.b.s3t">Ключевых конкурента</h3>
+          <p data-i18n="mic.b.s3p">Подробно проанализированы с точки зрения пользовательского опыта (UX), структуры подачи научных данных и сценариев взаимодействия B2B-клиентов для поиска рыночных ниш и позиционирования.</p>
+        </article>
+      </div>
+      <div class="mj-wide inview">
+        <h3 data-i18n="mic.sec.compH">Анализ конкурентных решений</h3>
+        <p data-i18n="mic.b.compP">В ходе анализа конкурентов мы сосредоточились на изучении пользовательского пути (User Journey) на крупнейших B2B-платформах и сайтах производителей биотехнологических сырьевых компонентов.</p>
+      </div>
+    </section>
+
+    <section class="mj-section mj-personas-block">
+      <div class="wrap">
+      <h2 data-i18n="mic.sec.personas">Персонажи (User Personas)</h2>
+      <p data-i18n="mic.b.perP">На основе паттернов поведения мы вывели два ключевых архетипа пользователей.</p>
+      <div class="mj-personas">
+        <article class="mj-persona inview">
+          <div class="mj-persona__head">
+            <img src="images/micbiomate/2.png" alt="Корпоративный покупатель">
+            <div>
+              <h3 data-i18n="mic.b.pe1n">Корпоративный покупатель</h3>
+              <span data-i18n="mic.b.pe1r">Специалист по закупкам, сотрудник отдела НИОКР или менеджер по продукту в косметической или химической компании.</span>
+            </div>
+          </div>
+          <dl>
+            <div><dt data-i18n="mic.sec.go">Цели</dt> <dd data-i18n="mic.b.pe1go">Найти новый ингредиент для продукта. Определить его безопасность и стабильность. Оценить поставщика. Быстро понять условия сотрудничества.</dd></div>
+            <div><dt data-i18n="mic.sec.be">Поведение на сайте</dt> <dd data-i18n="mic.b.pe1be">Посещает сайт с конкретной задачей. Не читает длинные текстовые блоки. Ищет ответы на вопросы: «Что это?», «Где применяется?», «Можно ли доверять?». Принимает решение за 1–3 минуты.</dd></div>
+            <div><dt data-i18n="mic.sec.pa">Болевые точки</dt> <dd data-i18n="mic.b.pe1pa">Опасения по поводу нестабильного качества. Непонимание сложных биологических процессов. Недоверие к стартапам без подтверждающих данных.</dd></div>
+            <div><dt data-i18n="mic.sec.needOn">Что важно на сайте</dt> <dd data-i18n="mic.b.pe1need">Простое описание продукта. Сферы применения (косметика, промышленность). Сигналы доверия (наличие лаборатории, технологии). Возможность быстрой связи / формы для контактов.</dd></div>
+            <div><dt data-i18n="mic.sec.path">Путь пользователя</dt> <dd data-i18n="mic.b.pe1path">Главный экран → Что это → Применение → Доверие → Контакты</dd></div>
+          </dl>
+        </article>
+        <article class="mj-persona inview">
+          <div class="mj-persona__head">
+            <img src="images/micbiomate/3.png" alt="Пользователь из сферы науки и НИОКР">
+            <div>
+              <h3 data-i18n="mic.b.pe2n">Пользователь из сферы науки и НИОКР</h3>
+              <span data-i18n="mic.b.pe2r">Ученый, исследователь или технический специалист в области биотехнологий или косметики.</span>
+            </div>
+          </div>
+          <dl>
+            <div><dt data-i18n="mic.sec.go">Цели</dt> <dd data-i18n="mic.b.pe2go">Понять технологию производства, проверить научное обоснование, сравнить с другими биоматериалами, оценить инновационность.</dd></div>
+            <div><dt data-i18n="mic.sec.be">Поведение на сайте</dt> <dd data-i18n="mic.b.pe2be">Внимательно читает текст, обращает внимание на терминологию и процессы, ищет схемы и данные, может возвращаться на сайт неоднократно.</dd></div>
+            <div><dt data-i18n="mic.sec.pa">Болевые точки</dt> <dd data-i18n="mic.b.pe2pa">Излишне маркетинговый характер описания, недостаток технических подробностей, отсутствие объяснения принципа работы.</dd></div>
+            <div><dt data-i18n="mic.sec.needThem">Что для них важно</dt> <dd data-i18n="mic.b.pe2need">Схема «как это работает», описание технологии, научное обоснование процесса, визуализация лабораторных данных.</dd></div>
+            <div><dt data-i18n="mic.sec.pathSite">Путь пользователя по сайту</dt> <dd data-i18n="mic.b.pe2path">Главный экран (Hero) → Технология → Данные/Процесс → Сферы применения → Контакты</dd></div>
+          </dl>
+        </article>
+      </div>
+      </div>
+    </section>
+
+    <section class="mj-section wrap">
+      <h2 data-i18n="mic.sec.flow">Путь пользователя (User Flow)</h2>
+      <p data-i18n="mic.b.flowP">Спроектированная информационная архитектура и веб-интерфейс минимизируют количество шагов от первого посещения сайта до запроса образцов и оформления B2B-партнерства, превращая изучение сложных научных данных в понятный и эффективный процесс.</p>
+      <div class="mj-flow">
+        <div class="mj-flow__step"><b>01</b><span data-i18n="mic.b.f1">Знакомство с технологией</span></div>
+        <div class="mj-flow__step"><b>02</b><span data-i18n="mic.b.f2">Изучение спецификаций</span></div>
+        <div class="mj-flow__step"><b>03</b><span data-i18n="mic.b.f3">Доступ к исследованиям</span></div>
+        <div class="mj-flow__step"><b>04</b><span data-i18n="mic.b.f4">Выбор формата сотрудничества</span></div>
+        <div class="mj-flow__step"><b>05</b><span data-i18n="mic.b.f5">Запрос образцов</span></div>
+        <div class="mj-flow__step"><b>06</b><span data-i18n="mic.b.f6">Прямой B2B-контакт</span></div>
+      </div>
+    </section>
+
+    <section class="mj-section mj-lofi-block">
+      <div class="wrap">
+        <h2 data-i18n="mic.sec.lofi">Лоу-фай прототипы и итерации</h2>
+        <p data-i18n="mic.b.lofiP">Для проверки гипотез мы спроектировали и тестировали три итерации структуры главной страницы и B2B-каталога. Тестирование проводилось на целевой аудитории (R&amp;D-специалистах и представителях биотех-компаний) с помощью тестов кликов (Click Tests) в Figma и юзабилити-тестов в Maze.</p>
+        <div class="mj-iters">
+          <article class="mj-iter inview">
+            <img src="images/micbiomate/4.jpg" alt="Итерация 1 MicBioMate">
+            <div>
+              <h3 data-i18n="mic.b.it1t">Итерация 1: Перегруженная структура (Complex Grid)</h3>
+              <p data-i18n="mic.b.it1p">Избыток технических терминов, исследований и графиков на первом экране рассеивал внимание. Пользователи не могли сразу понять ключевую ценность (100% animal-free) и путались в навигации.</p>
+            </div>
+          </article>
+          <article class="mj-iter inview">
+            <img src="images/micbiomate/5.jpg" alt="Итерация 2 MicBioMate">
+            <div>
+              <h3 data-i18n="mic.b.it2t">Итерация 2: Текстовый B2B-формат (Text Heavy)</h3>
+              <p data-i18n="mic.b.it2p">Улучшение, но чисто текстовая подача научных данных облегчила чтение, а отсутствие наглядных графических акцентов и интерактивных блоков затрудняло быстрый поиск нужных спецификаций сырья.</p>
+            </div>
+          </article>
+          <article class="mj-iter inview">
+            <img src="images/micbiomate/6.jpg" alt="Итерация 3 MicBioMate">
+            <div>
+              <h3 data-i18n="mic.b.it3t">Итерация 3: Финальный фокус (Focus on Science &amp; Value)</h3>
+              <p data-i18n="mic.b.it3p">Успех: вынесли главную ценность технологии на первый экран, дополнив её лаконичной структурой блоков и прямой кнопкой «Запросить образцы». Это сделало путь к B2B-контакту максимально простым и кликабельным.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="mj-section mj-id-block">
+      <div class="wrap">
+        <h2 data-i18n="mic.sec.id">Айдентика и визуальный язык</h2>
+        <p data-i18n="mic.b.idP">Спокойная природная палитра и чистые формы подчеркивают ощущение гармонии и ясности.</p>
+        <div class="mj-id">
+          <div>
+            <h3 style="margin-bottom:16px;color:var(--mj-ink)" data-i18n="mic.sec.colors">Цветовые решения</h3>
+            <div class="mj-swatch"><i style="background:#ffffff;border:1px solid #e4d9cc"></i><span data-i18n="mic.b.col1">Белый</span></div>
+            <div class="mj-swatch"><i style="background:#9eead4"></i><span data-i18n="mic.b.col2">Светло-зеленый</span></div>
+            <div class="mj-swatch"><i style="background:#0d2a1c"></i><span data-i18n="mic.b.col3">Темно-зеленый</span></div>
+            <div class="mj-swatch"><i style="background:#1a5c3a"></i><span data-i18n="mic.b.col4">Зеленый</span></div>
+          </div>
+          <div>
+            <h3 style="margin-bottom:16px;color:var(--mj-ink)" data-i18n="mic.sec.comps">Компоненты интерфейса</h3>
+            <div class="mj-ui-bits">
+              <div class="mj-toggle" aria-hidden="true"><span>On</span><i></i></div>
+              <div class="mj-ui-stack">
+                <span class="mj-chip" data-i18n="mic.b.btn1">Default</span>
+                <span class="mj-chip mj-chip--hover" data-i18n="mic.b.btn2">Hover</span>
+                <span class="mj-chip mj-chip--active" data-i18n="mic.b.btn3">Active</span>
+                <span class="mj-chip mj-chip--loader" data-i18n-aria="mic.b.btn4" aria-label="loader">
+                  <span class="mj-loader-dots"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+                </span>
+                <span class="mj-chip mj-chip--success" data-i18n="mic.b.btn5">Success</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mj-section mj-ui-block">
+      <div class="wrap">
+      <h2 data-i18n="mic.sec.ui">Финальный UI-дизайн</h2>
+      <p data-i18n="mic.b.uiP">Лаконичная эстетика и фокус на B2B-клиентах с первого экрана. Спокойная цветовая палитра, интуитивно понятный интерфейс и продуманная типографика снижают когнитивную нагрузку, превращая процесс поиска научных спецификаций и заказа образцов в легкий и понятный B2B-сценарий для ученых и R&amp;D-специалистов.</p>
+      <div class="mj-ui">
+        <figure class="inview">
+          <div class="mj-ui-media">
+            <img class="mj-ui-shot mj-ui-shot--wide" src="images/micbiomate/19.jpg" alt="Главный экран поиска и каталога MicBioMate">
+          </div>
+          <h3 data-i18n="mic.b.ui1t">01. Главный экран поиска и каталога</h3>
+          <p data-i18n="mic.b.ui1p">Единая точка входа с четким ценностным предложением. Моментальный доступ к интеллектуальному поиску по типу белка или CAS-номеру и наглядной фильтрации по ключевым характеристикам прямо на главной странице. Это позволяет специалисту сразу приступить к работе с научными данными без лишних кликов.</p>
+        </figure>
+        <figure class="inview">
+          <div class="mj-ui-media">
+            <img src="images/micbiomate/20.jpg" alt="Детальная карточка продукта MicBioMate">
+          </div>
+          <h3 data-i18n="mic.b.ui2t">02. Детальная карточка продукта и спецификации</h3>
+          <p data-i18n="mic.b.ui2p">Структурированная подача научных данных и технических спецификаций. Информация организована в виде удобных вкладок и аккордеонов, что позволяет инженерам и R&amp;D-менеджерам быстро находить критически важные параметры (чистота, происхождение, условия хранения), скрывая лишние детали и сохраняя фокус.</p>
+        </figure>
+        <figure class="inview">
+          <div class="mj-ui-media">
+            <img src="images/micbiomate/21.jpg" alt="Мгновенная отправка заявки MicBioMate">
+          </div>
+          <h3 data-i18n="mic.b.ui3t">03. Мгновенная отправка заявки</h3>
+          <p data-i18n="mic.b.ui3p">Прозрачный и быстрый процесс подтверждения B2B-интереса всего в пару кликов. После отправки пользователь получает четкое подтверждение успешного результата («Запрос принят») и информацию о следующих шагах: когда и как с ним свяжется менеджер по работе с ключевыми клиентами для согласования деталей. Это снижает тревожность и повышает доверие к партнеру.</p>
+        </figure>
+      </div>
+      </div>
+    </section>
+
+    <section class="mj-section wrap mj-ix">
+      <h2 data-i18n="mic.sec.ix">Интерактивное взаимодействие с продукцией</h2>
+      <p class="mj-ix__lede" data-i18n="mic.b.ixP">Мы уделили особое внимание микроанимациям: плавному скроллу каталога биоматериалов, интуитивному конфигурированию продукции и бесшовным переходам в заказе.</p>
+      <div class="mj-interact">
+        <div class="mj-interact__copy">
+          <h3 data-i18n="mic.b.ixH">Биоматериалы как ядро UX</h3>
+          <p data-i18n="mic.b.ixBody">Интерактивные элементы каталога мгновенно реагируют на касания: быстрый просмотр характеристик, легкий выбор параметров и наглядное сравнение продукции, позволяя специалисту быстро подобрать нужный материал для биопечати.</p>
+          <p class="mj-ok" data-i18n="mic.sec.tested">✓ Подтверждено пользовательским тестированием</p>
+        </div>
+        <figure class="mj-interact__media">
+          <img src="images/micbiomate/23.png" alt="Analysis of market pain points">
+        </figure>
+      </div>
+    </section>
+
+    <section class="mj-section mj-insights">
+      <div class="wrap">
+      <h2 data-i18n="mic.sec.insights">Ключевые инсайты MicBioMate</h2>
+      <div class="mj-3">
+        <article class="mj-card inview">
+          <h3 data-i18n="mic.b.in1t">Доверие повышает вовлеченность</h3>
+          <p data-i18n="mic.b.in1p">Прозрачные условия поставки, сертификация продукции и полная техническая документация создают долгосрочное доверие научных и медицинских партнеров к компании MicBioMate. Это повышает лояльность и конвертируется в более частые и крупные повторные заказы.</p>
+        </article>
+        <article class="mj-card inview">
+          <h3 data-i18n="mic.b.in2t">Снижение когнитивной нагрузки</h3>
+          <p data-i18n="mic.b.in2p">Удобная система фильтров по свойствам материала, интуитивно понятный каталог биоматериалов и наглядные 3D-модели избавляют специалистов от необходимости искать информацию в разрозненных источниках, объединяя все этапы проектирования и закупки в единый понятный сервис MicBioMate.</p>
+        </article>
+        <article class="mj-card inview">
+          <h3 data-i18n="mic.b.in3t">Фокус на персонализации</h3>
+          <p data-i18n="mic.b.in3p">Быстрый подбор биоматериалов под конкретные требования проекта, возможность запроса модифицированных характеристик и индивидуальные консультации специалистов позволяют клиентам получать релевантные решения без лишних действий, существенно экономя их время и ресурсы при разработке.</p>
+        </article>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer footer--studio">
+    <div class="wrap">
+      <div class="footer-divider"></div>
+      <div class="footer__row">
+        <div class="footer-brand">
+          <a class="footer-sign" href="index.html">Tetiana Z.</a>
+          <p class="footer-copy" data-i18n="foot.copy">© 2025 Tetiana Zaichenko. Все права защищены.</p>
+        </div>
+        <a class="footer-li" href="https://www.linkedin.com/" data-hover>LinkedIn <img src="images/icon-arrow-up-right.svg" width="10" height="10" alt=""></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/site-copy.js"></script>
+  <script src="js/case-copy.js"></script>
+  <script src="js/case-l10n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

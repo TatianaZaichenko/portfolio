@@ -1,0 +1,384 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MamaJoy — кейс · Tetiana Z.</title>
+  <meta name="description" content="MamaJoy — мобильное приложение онлайн-магазина для мам и малышей до 2 лет.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/mockup.css">
+  <link rel="stylesheet" href="css/mamajoy-page.css?v=r2">
+  <link rel="stylesheet" href="css/fig-match.css?v=r2">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>T</text></svg>">
+</head>
+<body class="mj-page mj-page--mama">
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-label">View</div>
+
+  <header class="nav">
+    <div class="nav__cluster">
+      <a class="nav__sign" href="index.html">Tetiana Z.</a>
+      <nav class="nav__links" data-i18n-aria="nav.aria" aria-label="Основная навигация">
+        <a href="index.html" data-hover data-i18n="nav.home">Home</a>
+        <a href="index.html#work" data-nav="work" data-hover data-i18n="nav.product">Product</a>
+        <a href="index.html#ops" data-nav="ops" data-hover data-i18n="nav.tech">Technologies</a>
+        <a href="index.html#process" data-nav="process" data-hover data-i18n="nav.app">Application</a>
+        <a href="index.html#contact" data-nav="contact" data-hover data-i18n="nav.contact">Contact</a>
+      </nav>
+    </div>
+    <div class="nav__right">
+      <div class="lang" data-lang>
+        <button class="lang__btn" type="button" data-lang-toggle data-hover aria-label="Язык" aria-haspopup="listbox" aria-expanded="false">
+          <span data-lang-current>EN</span>
+          <img class="lang__chevron" src="images/icon-lang-chevron.svg" width="20" height="20" alt="">
+        </button>
+        <ul class="lang__menu" data-lang-menu hidden>
+          <li><button type="button" data-lang-set="en">English <small>EN</small></button></li>
+          <li><button type="button" data-lang-set="ru">Русский <small>RU</small></button></li>
+          <li><button type="button" data-lang-set="uk">Українська <small>UK</small></button></li>
+          <li><button type="button" data-lang-set="de">Deutsch <small>DE</small></button></li>
+          <li><button type="button" data-lang-set="fr">Français <small>FR</small></button></li>
+          <li><button type="button" data-lang-set="it">Italiano <small>IT</small></button></li>
+          <li><button type="button" data-lang-set="pl">Polski <small>PL</small></button></li>
+        </ul>
+      </div>
+      <button class="menu-btn" type="button" aria-label="Открыть меню" data-menu>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="overlay-nav" data-overlay aria-hidden="true">
+    <a href="index.html"><span>01</span><span data-i18n="nav.home">Home</span></a>
+    <a href="index.html#work" data-nav="work"><span>02</span><span data-i18n="nav.product">Product</span></a>
+    <a href="index.html#ops" data-nav="ops"><span>03</span><span data-i18n="nav.tech">Technologies</span></a>
+    <a href="index.html#process" data-nav="process"><span>04</span><span data-i18n="nav.app">Application</span></a>
+    <a href="index.html#contact" data-nav="contact"><span>05</span><span data-i18n="nav.contact">Contact</span></a>
+    <div class="overlay-nav__meta">
+      <span>tanaaga168@gmail.com</span>
+      <span>+49 176 84214838</span>
+    </div>
+  </nav>
+
+  <main>
+    <section class="mj-hero">
+      <div class="wrap">
+        <div class="mj-topnav">
+          <a href="index.html" data-hover data-i18n="nav.homeBack">← На главную</a>
+          <span>
+            <a href="project-koeln.html" data-hover data-i18n="nav.prevCase">Предыдущий кейс</a>
+            &nbsp;·&nbsp;
+            <a href="project.html" data-hover data-i18n="nav.nextCase">Следующий кейс</a>
+          </span>
+        </div>
+        <p class="mj-badge" data-i18n="case.badge">UX/UI Case Study</p>
+        <h1 class="reveal" data-i18n="mj.h">MamaJoy — мобильное приложение онлайн-магазина, созданного для мам и их малышей до 2 лет.</h1>
+        <p class="lede reveal reveal-d1" data-i18n="mj.lede">Разработка интуитивного мобильного сервиса, помогающего беременным женщинам и родителям детей до 2 лет, созданный для комфортного подбора товаров, снижения когнитивной нагрузки и простой интеграции заботы о себе и ребенке в ежедневную рутину.</p>
+        <div class="mj-meta inview">
+          <div><span data-i18n="case.role">Роль</span><strong data-i18n="case.roleVal">Lead UX/UI Designer</strong></div>
+          <div><span data-i18n="case.time">Сроки</span><strong data-i18n="mj.timeVal">3 месяца (2025)</strong></div>
+          <div><span data-i18n="case.tools">Инструменты</span><strong data-i18n="mj.toolsVal">Figma, FigJam / Miro, VS Code</strong></div>
+          <div><span data-i18n="case.plat">Платформа</span><strong data-i18n="mj.platVal">iOS &amp; Android</strong></div>
+        </div>
+        <figure class="mj-hero-shot">
+          <img src="images/mamajoy/6.jpg" alt="Три экрана MamaJoy: приветствие, каталог и карточка товара">
+        </figure>
+      </div>
+    </section>
+
+    <section class="mj-section wrap">
+      <h2 data-i18n="case.about">О проекте</h2>
+      <p data-i18n="mj.b.about1">Молодые мамы часто сталкиваются с проблемой перегруженности и путаницы в онлайн-магазинах. Поиск подходящей детской одежды занимает много времени, даже несмотря на короткую продолжительность жизни. Для стартапа это усугубляется ограниченным бюджетом и необходимостью сосредоточиться на MVP (минимально жизнеспособном продукте).</p>
+      <p data-i18n="mj.b.about2">Был разработан MVP мобильного приложения для электронной коммерции с простым и интуитивно понятным пользовательским интерфейсом для мам и малышей. Приложение фокусируется на основных функциях, таких как поиск, фильтры, избранное и покупка, обеспечивая тем самым быстрый и удобный процесс покупок.</p>
+    </section>
+
+    <section class="mj-section mj-pain-block">
+      <div class="wrap">
+      <h2 data-i18n="case.pain">Проблема и боли пользователей</h2>
+      <p class="mj-pain-kicker" data-i18n="mj.b.painKicker">Проблемы и боли пользователей MamaJoy</p>
+      <p data-i18n="mj.b.painLead">В процессе анализа конкурентов на рынке Германии и проведения глубинных интервью с беременными женщинами и молодыми мамами мы выявили ключевые барьеры, превращающие онлайн-шопинг в источник дополнительного стресса:</p>
+      <div class="mj-3">
+        <article class="mj-card inview">
+          <h3 data-i18n="mj.b.pain1t">Сложная навигация и запутанный путь к покупке</h3>
+          <p data-i18n="mj.b.pain1p">Пользователям приходится тратить слишком много времени и делать избыточное количество кликов, чтобы просто найти нужный товар (например, «витамины для 2-го триместра» или «слипы для новорожденных») и оформить заказ. В условиях, когда у мамы есть всего пара свободных минут, пока ребенок спит, длинные сценарии с обязательной регистрацией становятся критическим препятствием.</p>
+        </article>
+        <article class="mj-card inview">
+          <h3 data-i18n="mj.b.pain2t">Отсутствие персонализации и поддержки</h3>
+          <p data-i18n="mj.b.pain2p">Существующие площадки предлагают стандартный, огромный каталог товаров, не учитывая текущий этап материнства. Беременная женщина на 12-й неделе видит ту же выдачу, что и мама полугодовалого малыша. Это вынуждает пользователей самостоятельно фильтровать тысячи позиций, вызывая чувство растерянности и неуверенности в правильности выбора, особенно у тех, кто ждет первого ребенка.</p>
+        </article>
+        <article class="mj-card inview">
+          <h3 data-i18n="mj.b.pain3t">Визуально перегруженный интерфейс и информационный шум</h3>
+          <p data-i18n="mj.b.pain3p">Яркие агрессивные цвета, обилие баннеров, всплывающих уведомлений, рекламы и избыточной технической информации вызывают у пользователей дополнительный стресс и чувство тревоги. Интерфейс большинства конкурентов не воспринимается как поддерживающее и спокойное пространство, необходимое женщине в этот чуткий период жизни.</p>
+        </article>
+      </div>
+      </div>
+    </section>
+
+    <section class="mj-section mj-research-block">
+      <div class="wrap">
+      <div class="mj-research-head">
+        <div>
+          <h2 data-i18n="case.research">Глубинное исследование</h2>
+          <p data-i18n="mj.b.resP">Для валидации гипотез и точного понимания потребностей беременных женщин и молодых мам на рынке Германии мы провели комплексное исследование, сочетающее качественные и количественные методы.</p>
+        </div>
+        <span class="mj-research-spark" aria-hidden="true"></span>
+      </div>
+      <div class="mj-3 mj-research-cards">
+        <article class="mj-card mj-stat inview">
+          <strong>12</strong>
+          <h3 data-i18n="case.statInt">Глубинных интервью</h3>
+          <p data-i18n="mj.b.s1p">Позволили выявить скрытые мотивы, страхи и реальные барьеры при выборе и покупке товаров для себя и малыша. Мы поняли, как дефицит времени и когнитивная нагрузка влияют на принятие решений.</p>
+        </article>
+        <article class="mj-card mj-stat inview">
+          <strong>150+</strong>
+          <h3 data-i18n="case.statSurvey">Ответов на онлайн-опрос</h3>
+          <p data-i18n="mj.b.s2p">Помогли собрать статистику об отношении к существующим интернет-магазинам, частоте покупок, предпочтительным способам доставки и готовности использовать поддерживающие функции приложения.</p>
+        </article>
+        <article class="mj-card mj-stat inview">
+          <strong>3</strong>
+          <h3 data-i18n="case.statComp">Ключевых конкурента</h3>
+          <p data-i18n="mj.b.s3p">Подробно проанализированы с точки зрения пользовательского опыта (UX), функционала, ассортиментной политики и визуального языка для поиска рыночных ниш и конкурентных преимуществ.</p>
+        </article>
+      </div>
+      <div class="mj-wide inview">
+        <h3 data-i18n="case.compH">Анализ конкурентных решений</h3>
+        <span class="mj-wide__mark" aria-hidden="true"></span>
+        <p data-i18n="mj.b.compP">В ходе анализа конкурентов мы сосредоточились на изучении пользовательского пути (User Journey) в крупнейших e-commerce и контентных платформах для мам в Германии.</p>
+      </div>
+      </div>
+    </section>
+
+    <section class="mj-section mj-personas-block">
+      <div class="wrap">
+      <h2 data-i18n="case.personas">Персонажи (User Personas)</h2>
+      <p data-i18n="mj.b.perP">На основе паттернов поведения мы вывели два ключевых архетипа пользователей.</p>
+      <div class="mj-personas">
+        <article class="mj-persona inview">
+          <div class="mj-persona__head">
+            <img src="images/mamajoy/4.png" alt="Мария">
+            <div>
+              <h3 data-i18n="mj.pe1.name">Мария, 29</h3>
+              <span data-i18n="mj.b.pe1role">Будущая молодая мама</span>
+            </div>
+          </div>
+          <dl>
+            <div><dt data-i18n="case.st">Статус:</dt> <dd data-i18n="mj.b.pe1st">Первая беременность, живёт в Берлине, работает дизайнером удалённо.</dd></div>
+            <div><dt data-i18n="case.go">Цели:</dt> <dd data-i18n="mj.b.pe1go">Найти удобную одежду для растущего живота, подготовить базовый «роддом-набор», оформить всё онлайн.</dd></div>
+            <div><dt data-i18n="mj.b.lblPa">Боли:</dt> <dd data-i18n="mj.b.pe1pa">Нет времени ходить по магазинам, раздражает длинный процесс регистрации, боится ошибиться с размерами.</dd></div>
+            <div><dt data-i18n="mj.b.lblBe">Поведение:</dt> <dd data-i18n="mj.b.pe1be">Заказывает почти всё со смартфона, читает отзывы в Instagram, предпочитает быструю оплату (Apple Pay/PayPal).</dd></div>
+          </dl>
+        </article>
+        <article class="mj-persona inview">
+          <div class="mj-persona__head">
+            <img src="images/mamajoy/5.png" alt="Анна">
+            <div>
+              <h3 data-i18n="mj.pe2.name">Анна, 33</h3>
+              <span data-i18n="mj.b.pe2role">Молодая мама</span>
+            </div>
+          </div>
+          <dl>
+            <div><dt data-i18n="case.st">Статус:</dt> <dd data-i18n="mj.b.pe2st">Мама 8-месячного мальчика, живёт в Гамбурге.</dd></div>
+            <div><dt data-i18n="case.go">Цели:</dt> <dd data-i18n="mj.b.pe2go">Купить детскую одежду и расходники (подгузники, крем) в пару кликов, иногда берёт подарки для подруг-мам.</dd></div>
+            <div><dt data-i18n="mj.b.lblPa">Боли:</dt> <dd data-i18n="mj.b.pe2pa">Ограниченное время, хочет простую фильтрацию по возрасту и готовые подборки «must-have».</dd></div>
+            <div><dt data-i18n="mj.b.lblBe">Поведение:</dt> <dd data-i18n="mj.b.pe2be">Оформляет заказы с телефона, ценит опцию «гостевой» покупки без сложного аккаунта, активно использует PayPal и быструю доставку DHL.</dd></div>
+          </dl>
+        </article>
+      </div>
+      </div>
+    </section>
+
+    <section class="mj-section wrap">
+      <h2 data-i18n="case.flow">Путь пользователя (User Flow)</h2>
+      <p data-i18n="mj.b.flowP">Интерфейс сокращает путь от запуска до подтверждения покупки.</p>
+      <div class="mj-flow">
+        <div class="mj-flow__step"><b>01</b><span data-i18n="mj.b.f1">Персонализированный запуск</span></div>
+        <div class="mj-flow__step"><b>02</b><span data-i18n="mj.b.f2">Актуальный дашборд</span></div>
+        <div class="mj-flow__step"><b>03</b><span data-i18n="mj.b.f3">Умная рекомендация</span></div>
+        <div class="mj-flow__step"><b>04</b><span data-i18n="mj.b.f4">Мгновенный выбор</span></div>
+        <div class="mj-flow__step"><b>05</b><span data-i18n="mj.b.f5">Быстрый Checkout</span></div>
+        <div class="mj-flow__step"><b>06</b><span data-i18n="mj.b.f6">Мягкий трекинг заказа</span></div>
+      </div>
+    </section>
+
+    <section class="mj-section mj-lofi-block">
+      <div class="wrap">
+        <h2 data-i18n="case.lofi">Лоу-фай прототипы и итерации</h2>
+        <p data-i18n="mj.b.lofiP">Для проверки гипотез мы спроектировали и протестировали три итерации структуры главного экрана. Тестирование проводилось на реальных пользователях целевой аудитории (Германия) с помощью тестов кликов (Click Tests) в Figma и юзабилити-тестов (Usability Tests) в Maze.</p>
+        <div class="mj-iters">
+          <article class="mj-iter inview">
+            <img src="images/mamajoy/3.png" alt="Итерация 1 — плиточная структура">
+            <div>
+              <h3 data-i18n="mj.b.it1t">Итерация 1: Плиточная структура (Grid)</h3>
+              <p data-i18n="mj.b.it1p">Слишком большое количество категорий товаров (Памперсы, Одежда, Витамины, Игрушки) на первом экране рассеивало внимание и вызывало чувство растерянности.</p>
+            </div>
+          </article>
+          <article class="mj-iter inview">
+            <img src="images/mamajoy/2.png" alt="Итерация 2 — вертикальный список">
+            <div>
+              <h3 data-i18n="mj.b.it2t">Итерация 2: Вертикальный список (List)</h3>
+              <p data-i18n="mj.b.it2p">Улучшение, но... Вертикальный скролл улучшил восприятие информации, но пользователи тратили слишком много времени на прокрутку длинного списка, чтобы найти нужную категорию. Фокус на быстрой покупке терялся.</p>
+            </div>
+          </article>
+          <article class="mj-iter inview">
+            <img src="images/mamajoy/1.png" alt="Итерация 3 — финальный фокус">
+            <div>
+              <h3 data-i18n="mj.b.it3t">Итерация 3: Финальный фокус (Focus on You)</h3>
+              <p data-i18n="mj.b.it3p">Успех: На главный экран вынесли персонализированную ленту «Вам сейчас необходимо» на основе срока беременности или возраста ребенка. Это действие — запуск персонализированной подборки — стало центральным и самым кликабельным.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="mj-section mj-id-block">
+      <div class="wrap">
+        <h2 data-i18n="case.id">Айдентика и визуальный язык</h2>
+        <p data-i18n="mj.b.idP">Спокойная природная палитра и чистые округлые формы подчеркивают ощущение гармонии и ясности.</p>
+        <div class="mj-id">
+          <div>
+            <h3 data-i18n="case.colors">Цветовые решения</h3>
+            <div class="mj-swatch"><i class="mj-swatch--w"></i><span data-i18n="mj.b.col1">Fast Weiß / Hellgrau</span></div>
+            <div class="mj-swatch"><i class="mj-swatch--g"></i><span data-i18n="mj.b.col2">Sehr helles Grau</span></div>
+            <div class="mj-swatch"><i class="mj-swatch--c"></i><span data-i18n="mj.b.col3">Cremiges Beige</span></div>
+            <div class="mj-swatch"><i class="mj-swatch--v"></i><span data-i18n="mj.b.col4">Cremiges Beige</span></div>
+          </div>
+          <div>
+            <h3 data-i18n="case.comps">Компоненты интерфейса</h3>
+            <div class="mj-ui-bits">
+              <div class="mj-ui-pays">
+                <span class="mj-pay mj-pay--fill">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 10h18" stroke="currentColor" stroke-width="1.8"/><path d="M7 15h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                  Card
+                </span>
+                <span class="mj-pay mj-pay--line">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V8.8L12 5l8 3.8V19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 19v-6h6v6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 19h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                  Bank Transfer
+                </span>
+              </div>
+              <div class="mj-ui-meta" aria-hidden="true">
+                <div><span>Directory</span><b>LU</b></div>
+                <div><span>Standard</span><b>DE</b></div>
+              </div>
+              <div class="mj-ui-col">
+                <span class="mj-pay mj-pay--ghost">High rating</span>
+                <span class="mj-pay mj-pay--ghost">Size
+                  <svg class="mj-pay__chev" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5 6 6.5 11 1.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div class="mj-ui-dash">
+                  <div class="mj-ui-under">
+                    <span class="mj-pay mj-pay--ghost mj-pay--mini">Mom clothes</span>
+                  </div>
+                  <div class="mj-ui-under">
+                    <span class="mj-pay mj-pay--ghost mj-pay--mini">Mom clothes</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mj-ui-dash mj-ui-dash--cats">
+                <div class="mj-cat">
+                  <img src="images/mamajoy/11.png" alt="">
+                  <span>Trousers</span>
+                </div>
+                <div class="mj-cat">
+                  <img src="images/mamajoy/11.png" alt="">
+                  <span>Trousers</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mj-section mj-ui-block">
+      <div class="wrap">
+      <h2 data-i18n="case.ui">Финальный UI-дизайн</h2>
+      <p data-i18n="mj.b.uiP">Эстетика лаконичности с акцентом на заботу и польза с первого экрана. Спокойная цветовая палитра и продуманная типографика снижают когнитивную нагрузку в чуткий период жизни.</p>
+      <div class="mj-ui">
+        <figure class="inview">
+          <div class="mj-ui-media">
+            <img src="images/mamajoy/7.jpg" alt="Стартовый экран MamaJoy">
+          </div>
+          <h3 data-i18n="mj.b.ui1t">01. Стартовый экран</h3>
+          <p data-i18n="mj.b.ui1p">Персонализированный приветственный экран и быстрый онбординг с адаптацией под текущий срок беременности или возраст ребенка.</p>
+        </figure>
+        <figure class="inview">
+          <div class="mj-ui-media">
+            <img src="images/mamajoy/8.jpg" alt="Умный каталог MamaJoy">
+          </div>
+          <h3 data-i18n="mj.b.ui2t">02. Умный каталог</h3>
+          <p data-i18n="mj.b.ui2p">Визуально понятные категории и структурированная выдача товаров для ускорения поиска без лишнего информационного шума.</p>
+        </figure>
+        <figure class="inview">
+          <div class="mj-ui-media">
+            <img src="images/mamajoy/9.jpg" alt="Быстрый checkout MamaJoy">
+          </div>
+          <h3 data-i18n="mj.b.ui3t">03. Быстрый Checkout</h3>
+          <p data-i18n="mj.b.ui3p">Прозрачное подтверждение заказа в пару кликов с мгновенной информацией о составе покупки и сроках доставки.</p>
+        </figure>
+      </div>
+      </div>
+    </section>
+
+    <section class="mj-section wrap mj-ix">
+      <h2 data-i18n="mj.b.ixT">Интерактивное взаимодействие</h2>
+      <p class="mj-ix__lede" data-i18n="mj.b.ixP">Мы уделили особое внимание микроанимациям: гладкому скроллу категорий, отзывчивым карточкам и бесшовному переходу к оформлению покупки.</p>
+      <div class="mj-interact">
+        <div class="mj-interact__copy">
+          <h3 data-i18n="mj.b.ixH">Интуитивная навигация как ядро UX</h3>
+          <p data-i18n="mj.b.ixBody">Интерактивные элементы каталога мгновенно реагируют на касания: быстрый просмотр категорий, наглядный сброс фильтров и динамическая корзина позволяют маме совершать покупки легко и без лишних действий даже одной рукой.</p>
+          <p class="mj-ok" data-i18n="case.tested">✓ Подтверждено пользовательским тестированием</p>
+        </div>
+        <figure class="mj-interact__media">
+          <img src="images/mamajoy/10.png" alt="Два экрана MamaJoy: главная и категории">
+        </figure>
+      </div>
+    </section>
+
+    <section class="mj-section mj-insights">
+      <div class="wrap">
+      <h2 data-i18n="case.insights">Ключевые инсайты</h2>
+      <div class="mj-3">
+        <article class="mj-card inview">
+          <h3 data-i18n="mj.b.in1t">Доверие повышает средний чек</h3>
+          <p data-i18n="mj.b.in1p">Фокус на поддержке, а не на агрессивных продажах, позволяет строить долгосрочные отношения. Лояльность к платформе MamaJoy конвертируется в более высокие показатели возвращаемости и выручки.</p>
+        </article>
+        <article class="mj-card inview">
+          <h3 data-i18n="mj.b.in2t">Снижение когнитивной нагрузки</h3>
+          <p data-i18n="mj.b.in2p">Экосистема, объединяющая товары, контент и поддержку, воспринимается как единый сервис. Это создает сильное конкурентное преимущество и увеличивает ценность подписки или повторных покупок.</p>
+        </article>
+        <article class="mj-card inview">
+          <h3 data-i18n="mj.b.in3t">Фокус на технологии и персонализации</h3>
+          <p data-i18n="mj.b.in3p">Этот вариант подчеркивает технологическую сторону продукта и то, как данные используются для улучшения опыта.</p>
+        </article>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer footer--studio">
+    <div class="wrap">
+      <div class="footer-divider"></div>
+      <div class="footer__row">
+        <div class="footer-brand">
+          <a class="footer-sign" href="index.html">Tetiana Z.</a>
+          <p class="footer-copy" data-i18n="foot.copy">© 2025 Tetiana Zaichenko. Все права защищены.</p>
+        </div>
+        <a class="footer-li" href="https://www.linkedin.com/" data-hover>LinkedIn <img src="images/icon-arrow-up-right.svg" width="10" height="10" alt=""></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/site-copy.js"></script>
+  <script src="js/case-copy.js"></script>
+  <script src="js/case-l10n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
